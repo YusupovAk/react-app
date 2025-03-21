@@ -4,6 +4,7 @@ import CustomNavBar from './components/custom_nav_bar'
 import CustomNavBottom from "./components/custom_nav_bottom"
 import DlyaDoma from "./components/dlya_doma"
 import AdsBanner from "./components/ads_banner"
+import CategoryBanner from "./components/category_banner"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,9 @@ function App() {
       </div>
       <div className="ads_banner">
         <AdsBanner/>
+      </div>
+      <div className="category_banners">
+        <CategoryBanner/>
       </div>
     </header>
     </>
