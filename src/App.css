@@ -203,6 +203,11 @@ nav .login #login {
 
 }
 .c_banner{
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  
   padding: 25px 75px;
   color: #1A1A25;
   h2{
@@ -279,7 +284,7 @@ left: -20px;
 }.St{
   display: flex;
   position: relative;
-  justify-self: end;
+  justify-content: space-around;
  
 }
 .srI{
