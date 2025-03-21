@@ -253,6 +253,7 @@ left: -20px;
 .products{
   padding: 20px;
   display: flex;
+  justify-content: space-around;
   gap: 10px;
   position: relative;
 
