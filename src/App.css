@@ -276,4 +276,17 @@ left: -20px;
   position: relative;
   top: -70px;
   right: 20px;
+}.St{
+  display: flex;
+  position: relative;
+  justify-self: end;
+ 
 }
+.srI{
+  display: flex;
+  position: relative;
+  left: 120px;
+ }.srT{
+  position: relative;
+  left: 120px;
+ }

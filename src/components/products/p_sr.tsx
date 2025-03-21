@@ -3,14 +3,14 @@ interface ProductProps {
     Info2: string;
 }
 
-const p_sr = (props: ProductProps) => {
+const Psr = (props: ProductProps) => {
     return (
         <div className="srC">
             <h2 className="srT">
-
+                {props.Info2}
             </h2>
-            <img src="" alt="" className="srI"/>
+            <img src={props.Img} alt={"asa"} className="srI"/>
         </div>
     )
 }
-    export default p_sr
+    export default Psr
