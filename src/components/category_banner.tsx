@@ -27,8 +27,8 @@ const c_banner = () => {
                     <Psr key={index} Img={Img} Info2={StIfo[index % StIfo.length]} />
                 ))}
             </div>
+            <button type="button" id="PPButton2">Все категории</button>
         </div>
     )
 }
-
 export default c_banner;

@@ -206,12 +206,21 @@ nav .login #login {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  justify-content: space-between;
+  position: relative;
+  left: -100px;
+  justify-content: center;
   
   padding: 25px 75px;
   color: #1A1A25;
   h2{
     margin: 0px 100px;
+  }
+  b{
+    display: flex;
+    position: relative;
+    left: -400px;
+    font-weight: bold;
+    font-size: 32px;
   }
 }
 .product_container{
@@ -258,13 +267,14 @@ left: -20px;
 .products{
   padding: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 10px;
   position: relative;
 
 }.octance{
   position: relative;
   align-items: center;
+  justify-content: space-evenly;
   right: -250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -284,7 +294,7 @@ left: -20px;
 }.St{
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-evenly;
  
 }
 .srI{
@@ -295,3 +305,67 @@ left: -20px;
   position: relative;
   left: 120px;
  }
+ .PB{
+  color: black;
+ } 
+ 
+.row1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  .srT{
+    width: 50px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+  }
+}
+.row2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  .srT{
+    width: 150px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+  }
+
+}
+#imgPB{
+  position: relative;
+  top: 100px;
+  width: 700px;
+  background: lightslategray;
+}
+.PpText{
+  position: relative;
+  width: 50px;
+  z-index: 1;
+  top: 240px;
+  color: white;
+  right: -190px;
+}
+#PPButton{
+  border: #F53B49 solid;
+  background: none;
+  color: red;
+  margin: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 100px;
+}
+#PPButton2{
+  border: #F53B49 solid;
+  background: none;
+  color: red;
+  margin: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -610px;
+}
