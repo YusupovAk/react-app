@@ -6,6 +6,7 @@ import DlyaDoma from "./components/dlya_doma"
 import AdsBanner from "./components/ads_banner"
 import CategoryBanner from "./components/category_banner"
 import ProductsPage from './components/products_banner'
+import Aksiya from './components/aksiya'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +29,9 @@ function App() {
       </div>
       <div className="PB">
         <ProductsPage/>
+      </div>
+      <div className="acsiya_s">
+        <Aksiya/>
       </div>
     </header>
     </>

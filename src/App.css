@@ -233,7 +233,7 @@ nav .login #login {
   box-shadow: #1A1A25;
   overflow: hidden;
   position: relative;
-  right: -100px;
+  right: -10px;
 }
 .product_img{
   display: flex;
@@ -294,78 +294,102 @@ left: -20px;
 }.St{
   display: flex;
   position: relative;
+  gap: 20px;
   justify-content: space-evenly;
  
 }
 .srI{
   display: flex;
+  padding: 25px 30px;
+  align-items: center;
   position: relative;
+  background: #a8a8be;
   left: 120px;
  }.srT{
   position: relative;
   left: 120px;
+  z-index: 1;
  }
  .PB{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   color: black;
  } 
  
-.row1{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 25px;
-  .srT{
-    width: 50px;
-    position: relative;
-    top: 100px;
-    left: 0px;
+ .PC{
+  .yug{
+    background: #a8a8be;
+    margin-right: 10px;
   }
-}
-.row2{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  .srT{
-    width: 150px;
-    position: relative;
-    top: 100px;
-    left: 0px;
+  #imgPB{
+    padding: 40px;
   }
+  .row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    .srC{
+      background: #a8a8be;
+    }
+    .srI2{
+      width: 300px;
+      height: 284px;
+    }
 
-}
-#imgPB{
-  position: relative;
-  top: 100px;
-  width: 700px;
-  background: lightslategray;
-}
-.PpText{
-  position: relative;
-  width: 50px;
+  .srT2{
+      position: relative;
+      width: 280px;
+  }
+  .srC2{
+    background: #a8a8be;
+    padding: 20px;
+  }
+  }
+  .row2{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    .srC2{
+      background: #a8a8be;
+    }
+    .srI2{
+      display: flex;
+      width: 300px;
+    }
+  }
+.srC2:active,.srI2:active,#imgPB:active,.yug:active{
+  color: #000000;
+  background: none;
   z-index: 1;
-  top: 240px;
-  color: white;
-  right: -190px;
+  filter: blur(5px);
 }
-#PPButton{
-  border: #F53B49 solid;
-  background: none;
-  color: red;
-  margin: 25px;
-  position: relative;
+}
+.srC2:hover,.srI2:hover,#imgPB:hover,.yug:hover{
+  animation: Bord 0.6s infinite;
+  border: double;
+}
+@keyframes Bord {
+ 0%{
+  border-color: #F53B49;
+  transition: 0.2s ease;
+ }
+ 50%{
+  border-color: greenyellow;
+  transition: 0.2s ease;
+ }
+ 100%{
+  border-color: blue;
+  transition: 0.2s ease;
+ }
+}
+.conAksiya{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 100px;
-}
-#PPButton2{
-  border: #F53B49 solid;
-  background: none;
-  color: red;
-  margin: 25px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: -610px;
-}
+  flex-wrap: wrap;
+  
+}.A_Text{
+    color: #000000;
+  }
