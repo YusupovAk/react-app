@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Psr from "./products/p_sr";
 import Product from "./products/product"
 import Product2 from "./products/product copy";
@@ -8,6 +9,7 @@ const c_banner = () => {
     let Ifo2 = ["Велотренажеры","Горнолыжные тренажеры","Силовые тренажеры","Гребные тренажеры"]
     let StL = ["src/assets/images/St1.png","src/assets/images/St2.png","src/assets/images/Sr3.png","src/assets/images/St4.png"]
     let StIfo = ["Батуты","Игровые столы","Массажные кресла","Фитнес аксессуары "]
+    const [count, setCount] = useState(false)
     return (
         <div className="c_banner">
             <h2><b>Тренажеры для дома</b></h2>
@@ -24,10 +26,10 @@ const c_banner = () => {
             </div>
             <div className="St">
                <br /> {StL.map((Img: string, index: number) =>(
-                    <Psr key={index} Img={Img} Info2={StIfo[index % StIfo.length]} />
+                    count&&<Psr key={index} Img={Img} Info2={StIfo[index % StIfo.length]} />
                 ))}
             </div>
-            <button type="button" id="PPButton2">Все категории</button>
+            <button type="button" id="PPButton2" onClick={() => setCount(true)}>Все категории</button>
         </div>
     )
 }

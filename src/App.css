@@ -539,6 +539,3 @@ left: -20px;
   box-shadow: #000000;
 }
 }
-.idei:hover ~ .mig1 {
-  filter: brightness(0);
-}

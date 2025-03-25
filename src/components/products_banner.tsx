@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Psr from "./p_sr";
 
 const productsPage = () => {
+    const [count, setCount] = useState(false)
     let pic = ["src/assets/images/PB4.png","src/assets/images/PB5.png","src/assets/images/PB6.png","src/assets/images/PB7.png"]
     let str = ["Функциональный тренинг","Wellness, СПА, Массаж","Спортивная медицина и реабилитация","Свободные веса"]
     let str2 = ["Грузоблочные тренажеры","Тренажеры на свободных весах"]
@@ -19,10 +21,10 @@ const productsPage = () => {
 
         <div className="row2">
         {pic.map((Img: string, index: number) => (
-            <Psr key={index} Img={Img} Info2={str[index % str.length]}/>
+            count && <Psr key={index} Img={Img} Info2={str[index % str.length]}/>
         ))}
         </div>
-        <button type="button" id="PPButton">Все категории</button>
+        <button type="button" id="PPButton" onClick={() => setCount(true)}>Все категории</button>
 
         </section>
     )

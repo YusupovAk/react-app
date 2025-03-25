@@ -1,6 +1,8 @@
+import { useState } from "react"
 import Acsi from "./products/aksiya_protuct"
 
 const aksiya = () => {
+    const [count, setCount] = useState(false)
     return (
 	<section className="acsiya">
         <div className="text_a">
@@ -10,14 +12,19 @@ const aksiya = () => {
         </div>
         <div className="conAksiya">
         <Acsi/>
+        <Acsi/> 
         <Acsi/>
         <Acsi/>
-        <Acsi/>
-        <Acsi/>
-        <Acsi/>
+        {count && (
+            <>
+
+                <Acsi/>
+                <Acsi/>
+            </>
+        )}
         
         </div>
-        <button type="button" className="see">Все товары по акции</button>
+        <button type="button" className="see" onClick={ () => setCount(true)}>Все товары по акции</button>
 
     </section>
 )}
