@@ -17,6 +17,8 @@ const aksiya = () => {
         <Acsi/>
         
         </div>
+        <button type="button" className="see">Все товары по акции</button>
+
     </section>
 )}
 export default aksiya

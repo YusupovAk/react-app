@@ -9,7 +9,7 @@ const acsi = () => (
         <img src="src/assets/images/aksiya.png" alt="" className="aksiya_I" />
         <div className="info_a">
             <div className="a_N">
-            <h2>В наличии</h2>
+            <h2 className="nalichi">В наличии</h2>
             
             <svg width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="4" cy="4.5" r="4" fill="#2FC509"/>
@@ -17,11 +17,11 @@ const acsi = () => (
                 <circle cx="24" cy="4.5" r="4" fill="#2FC509"/>
             </svg>
 
-        <h2>Есть в шоу-руме</h2>
+        <h2 className="show">Есть в шоу-руме</h2>
             </div>
-        <h2>Беговая дорожка CardioPower S35</h2>
+        <h2 className="s35">Беговая дорожка CardioPower S35</h2>
         <div className="reting_a">
-            <h2>Рейтинг</h2>
+            <h2 className="reyting">Рейтинг</h2>
             <svg width="66" height="13" viewBox="0 0 66 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M6 0.5L7.91148 3.86908L11.7063 4.6459L9.09284 7.50492L9.52671 11.3541L6 9.752L2.47329 11.3541L2.90716 7.50492L0.293661 4.6459L4.08852 3.86908L6 0.5Z" fill="#F99808"/>
 <path d="M20 0.5L21.9115 3.86908L25.7063 4.6459L23.0928 7.50492L23.5267 11.3541L20 9.752L16.4733 11.3541L16.9072 7.50492L14.2937 4.6459L18.0885 3.86908L20 0.5Z" fill="#F99808"/>
@@ -31,9 +31,10 @@ const acsi = () => (
             </svg>
 
         </div>
+        <div className="bottom_PA">
         <div className="price_a">
             <h2>1 134 900 ₽</h2>
-            <h2>1 134 900 ₽</h2>
+            <h2 className="lines">1 134 900 ₽</h2>
         </div>
         <div className="a_add_cart">
             <button type="button"><svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,10 +43,10 @@ const acsi = () => (
 </svg>
             Купить</button>
         </div>
+        </div>
 
         </div>
-        <button type="button" className="see">Все товары по акции</button>
-
+        
     </section>
 )
 export default acsi
