@@ -539,3 +539,28 @@ left: -20px;
   box-shadow: #000000;
 }
 }
+.brendi-container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.brendi-container:active{
+  filter: brightness(0.5);
+  color: white;
+}
+.pomosh-container{
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  .pomosh-images-leist{
+    display: flex;
+    justify-content: center;
+    transition: 0.5ms ease;
+
+  }
+  .pomosh-image:hover{
+    transform: scale(1.1);
+    transform-origin: bottom;
+    transition: 0.5ms ease;
+  }
+}

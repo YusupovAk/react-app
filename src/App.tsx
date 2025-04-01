@@ -8,6 +8,8 @@ import CategoryBanner from "./components/category_banner"
 import ProductsPage from './components/products_banner'
 import Aksiya from './components/aksiya'
 import Idei from './components/idei'
+import Brendi from './components/brendi'
+import Pomosh from './components/pomosh'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,6 +38,12 @@ function App() {
       </div>
       <div className="idei_Container">
         <Idei/>
+      </div>
+      <div className="brendi">
+        <Brendi/>
+      </div>
+      <div className="Pomosh">
+        <Pomosh/>
       </div>
     </header>
     </>
